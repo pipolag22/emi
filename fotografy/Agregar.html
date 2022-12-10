@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEME</title>
+  </head>
+  <body>
+    <h1>MEMETROY</h1>
+    <button type="submit"><a href="index.php">Inicio</a></button>
+    <button type="submit"><a href="listar.php">LISTAR MEME</a></button>
+
+    <h2>Agregar MEMES</h2>
+    <p>Ingrese los datos del MEME.</p>
+
+    <form method="POST" action="agregar.php" enctype="multipart/form-data">
+      <label>texto</label>
+      <input type="text" name="nombre" placeholder="nombre" required />
+      <label>dimension</label>
+      <input type="text" name="Posicion" placeholder="Posicion" required />
+      <label>formato</label>
+      <input type="text" name="Info" placeholder="Info" required />
+      <label>Imagen</label>
+      <input type="file" name="imagen" placeholder="imagen" />
+      <input type="submit" name="submit" value="Ingresar" />
+    </form>
+  </body>
+</html>
